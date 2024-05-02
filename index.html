@@ -15,8 +15,8 @@
 		<script type="importmap">
 			{
 				"imports": {
-					"three": "./three.module.js",
-					"three/addons/": "./"
+					"three": "./three.module.js"
+					
 				}
 			}
 		</script>
@@ -26,7 +26,7 @@
 			import * as THREE from 'three';
 
 
-			import { GUI } from 'three/addons/lil-gui.module.min.js';
+			import { GUI } from 'lil-gui.module.min.js';
 
 			let camera, scene, renderer, stats, material;
 			let mouseX = 0, mouseY = 0;
