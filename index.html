@@ -9,7 +9,7 @@
 	<body>
 
 		<div id="info">
-			<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - webgl seven animation (touch) - Oleksii Petrov
+			<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - webgl seven animation (touch2) - Oleksii Petrov
 		</div>
 
 		<script type="importmap">
@@ -119,6 +119,8 @@
 				renderer.setSize( window.innerWidth, window.innerHeight );
 				document.body.appendChild( renderer.domElement );
 
+				renderer.domElement.addEventListener("touchmove", handleTouchMove);
+
 				//
 
 				//
@@ -137,7 +139,7 @@
 
 				document.body.style.touchAction = 'none';
 				document.body.addEventListener( 'pointermove', onPointerMove );
-				document.body.addEventListener("touchmove", handleTouchMove);
+				
 
 				//
 
